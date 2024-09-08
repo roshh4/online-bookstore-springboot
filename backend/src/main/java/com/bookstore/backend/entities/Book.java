@@ -11,7 +11,6 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long bookId;
 
-
     private String name;
     private String description;
     private String isbn;
@@ -19,9 +18,10 @@ public class Book {
     private int noOfPages;
     private String publication;
     private String img;
-    private LocalDate dateOfPublication; 
+    private LocalDate dateOfPublication;
 
     @ManyToOne
     @JoinColumn(name = "authorId", referencedColumnName = "authorId")
     private Author author;
+
 }
