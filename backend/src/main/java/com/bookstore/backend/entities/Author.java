@@ -16,4 +16,7 @@ public class Author {
     private LocalDate birthDate;
     private String description;
     private String img;
+
+    @OneToMany(mappedBy = "author")
+    private List<Book> books;
 }

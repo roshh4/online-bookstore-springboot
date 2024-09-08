@@ -2,7 +2,6 @@ package com.bookstore.backend.entities;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
-import java.util.*;
 
 @Entity
 @Table(name = "books")
@@ -23,6 +22,6 @@ public class Book {
     private LocalDate dateOfPublication; 
 
     @ManyToOne
-    @JoinColumn(name = "author_id", referencedColumnName = "authorId")
+    @JoinColumn(name = "authorId", referencedColumnName = "authorId")
     private Author author;
 }
