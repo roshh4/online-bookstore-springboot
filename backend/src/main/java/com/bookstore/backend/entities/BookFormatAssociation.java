@@ -19,4 +19,38 @@ public class BookFormatAssociation {
     private NewBookFormat bookFormat;
 
     private double price;
+
+    // Getters and setters
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
+
+    public  NewBookFormat getBookFormat() {
+        return bookFormat;
+    }
+
+    public void setBookFormat(NewBookFormat bookFormat) {
+        this.bookFormat = bookFormat;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }

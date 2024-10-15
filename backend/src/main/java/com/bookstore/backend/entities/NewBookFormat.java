@@ -10,18 +10,16 @@ public class NewBookFormat {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long formatId;
 
+    @Column(nullable = false, unique = true)
     private String format;
 
-    // Default constructor (required by JPA)
     public NewBookFormat() {
     }
 
-    // Parameterized constructor
     public NewBookFormat(String format) {
         this.format = format;
     }
 
-    // Getters and Setters
     public long getFormatId() {
         return formatId;
     }
@@ -36,5 +34,13 @@ public class NewBookFormat {
 
     public void setFormat(String format) {
         this.format = format;
+    }
+
+    @Override
+    public String toString() {
+        return "NewBookFormat{" +
+                "formatId=" + formatId +
+                ", format='" + format + '\'' +
+                '}';
     }
 }

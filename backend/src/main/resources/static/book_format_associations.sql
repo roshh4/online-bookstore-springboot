@@ -83,3 +83,6 @@ INSERT INTO book_format_associations (book_id, format_id, price) VALUES (27, 3, 
 INSERT INTO book_format_associations (book_id, format_id, price) VALUES (28, 1, 499.00);  -- Paperback
 INSERT INTO book_format_associations (book_id, format_id, price) VALUES (28, 2, 799.00);  -- Hardcover
 INSERT INTO book_format_associations (book_id, format_id, price) VALUES (29, 2, 849.00);  -- Hardcover
+
+
+SELECT * FROM books;
